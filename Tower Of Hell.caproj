@@ -16,13 +16,11 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
-        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Car" version="1">Car</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -34,7 +32,6 @@
     <window-size>
         <width>640</width>
         <height>480</height>
-        <height>400</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -52,7 +49,7 @@
     <object-folder>
         <object-type name="BackgroundTile" sid="560555488846212">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\Tower-of-Hell\Asset Environment\Lv1-Background.png" />
+            <texture />
         </object-type>
         <object-type name="Player" sid="477011578815289">
             <plugin id="Sprite" />
@@ -62,12 +59,6 @@
                 </behavior-type>
                 <behavior-type name="ScrollTo" sid="749341153315481">
                     <behavior id="scrollto" />
-                </behavior-type>
-                <behavior-type name="Timer" sid="975977244455208">
-                    <behavior id="Timer" />
-                </behavior-type>
-                <behavior-type name="Bullet" sid="529524946983537">
-                    <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -111,136 +102,6 @@
         </object-type>
         <object-type name="Text" sid="799095808877994">
             <plugin id="Text" />
-        <object-type name="Tilemap" sid="184856606674825">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\Tower-of-Hell\Asset Environment\Lv1\Tileset.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Tilemap" sid="184856606674825">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\Tower-of-Hell\Asset Environment\Lv1\Tileset.png" />
-            <tiles />
-        <object-type name="TreeBackground" sid="176733952480544">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\craftpix-net-362692-free-green-zone-tileset-pixel-art\2 Background\Night\5.png" />
-        </object-type>
-        <object-type name="BackgroundTilemap" sid="756815247334065">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\craftpix-net-362692-free-green-zone-tileset-pixel-art\Tileset.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Stone1" sid="877443372014505">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="484319213187336" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\craftpix-net-362692-free-green-zone-tileset-pixel-art\3 Objects\Stones\6.png">
-                        <collision-poly>
-                            <point x="0.128571" y="0.204545" />
-                            <point x="0.5" y="0.295455" />
-                            <point x="0.685714" y="0.5" />
-                            <point x="0.7" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0.0142857" y="0.977273" />
-                            <point x="0.114286" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Stone2" sid="801093497991707">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="618429185314715" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\craftpix-net-362692-free-green-zone-tileset-pixel-art\3 Objects\Stones\5.png">
-                        <collision-poly>
-                            <point x="0.173913" y="0.363636" />
-                            <point x="0.5" y="0.0454545" />
-                            <point x="0.956522" y="0.0909091" />
-                            <point x="0.913043" y="0.5" />
-                            <point x="0.913043" y="0.818182" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.108696" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Stone3" sid="253108190389517">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841144768285693" speed="5">
-                    <frame duration="1" hotspotX="0.512821" hotspotY="0.529412" original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\craftpix-net-362692-free-green-zone-tileset-pixel-art\3 Objects\Stones\4.png">
-                        <collision-poly>
-                            <point x="0.0512821" y="0.117647" />
-                            <point x="0.487179" y="0.294118" />
-                            <point x="0.871795" y="0.294118" />
-                            <point x="0.846154" y="0.470588" />
-                            <point x="1" y="1" />
-                            <point x="0.487179" y="1" />
-                            <point x="0.0512821" y="0.882353" />
-                            <point x="0" y="0.470588" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Tree1" sid="888840861452119">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="180717711624488" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\craftpix-net-362692-free-green-zone-tileset-pixel-art\3 Objects\Other\Tree1.png">
-                        <collision-poly>
-                            <point x="0.258065" y="0.15534" />
-                            <point x="0.5" y="0" />
-                            <point x="0.806452" y="0.116505" />
-                            <point x="0.919355" y="0.495146" />
-                            <point x="0.596774" y="0.757282" />
-                            <point x="0.5" y="1" />
-                            <point x="0.435484" y="0.737864" />
-                            <point x="0.0645161" y="0.495146" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Tree2" sid="226347319006999">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572875266753534" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.503876" original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\craftpix-net-362692-free-green-zone-tileset-pixel-art\3 Objects\Other\Tree2.png">
-                        <collision-poly>
-                            <point x="0.0806452" y="0.0775194" />
-                            <point x="0.5" y="0.00775194" />
-                            <point x="0.935484" y="0.0620155" />
-                            <point x="0.927419" y="0.496124" />
-                            <point x="0.677419" y="0.689922" />
-                            <point x="0.5" y="1" />
-                            <point x="0.387097" y="0.627907" />
-                            <point x="0.233871" y="0.496124" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Bush1" sid="329135600671985">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116499730776460" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\Tower-of-Hell\Asset Environment\Lv1\3 Objects\Bushes\14.png">
-                        <collision-poly>
-                            <point x="0.225" y="0.5625" />
-                            <point x="0.5" y="0" />
-                            <point x="0.875" y="0.3125" />
-                            <point x="0.875" y="0.5" />
-                            <point x="0.975" y="0.9375" />
-                            <point x="0.5" y="1" />
-                            <point x="0.025" y="0.9375" />
-                            <point x="0.05" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="TiledBackground3" sid="373360625687219">
             <plugin id="TiledBg" />
@@ -470,14 +331,12 @@
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
-        <layout>GameplayLv1.xml</layout>
         <layout>GameplayLv02.xml</layout>
         <layout>GameplayLv03.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
-        <event-sheet>GameplayLv1.xml</event-sheet>
         <event-sheet>GameplayLv02.xml</event-sheet>
         <event-sheet>GameplayLv03.xml</event-sheet>
     </event-folder>
