@@ -14,10 +14,13 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -46,7 +49,7 @@
     <object-folder>
         <object-type name="BackgroundTile" sid="560555488846212">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\Tower-of-Hell\Asset Environment\Lv1-Background.png" />
         </object-type>
         <object-type name="Player" sid="477011578815289">
             <plugin id="Sprite" />
@@ -56,6 +59,12 @@
                 </behavior-type>
                 <behavior-type name="ScrollTo" sid="749341153315481">
                     <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="975977244455208">
+                    <behavior id="Timer" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="529524946983537">
+                    <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -100,13 +109,20 @@
         <object-type name="Text" sid="799095808877994">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Tilemap" sid="184856606674825">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\Tower-of-Hell\Asset Environment\Lv1\Tileset.png" />
+            <tiles />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>GameplayLv1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>GameplayLv1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
