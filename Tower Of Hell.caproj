@@ -32,7 +32,6 @@
     <window-size>
         <width>640</width>
         <height>480</height>
-        <height>400</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -109,7 +108,6 @@
         </object-type>
         <object-type name="Text" sid="799095808877994">
             <plugin id="Text" />
-        <object-type name="Tilemap" sid="184856606674825">
             <plugin id="Tilemap" />
             <texture original-source="C:\Users\Jasmine\Documents\College\smt3\game development\UAS\Tower-of-Hell\Asset Environment\Lv1\Tileset.png" />
             <tiles />
