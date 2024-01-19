@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="dashing" sid="379612264587435" static="0" type="number">0</variable>
+        <variable constant="0" name="canDash" sid="776735821045400" static="0" type="number">1</variable>
         <comment>Use the down arrow to allow the player to deliberately drop down through a jump-thru platform.</comment>
         <event-block sid="345544745167374">
             <conditions>
@@ -32,6 +34,11 @@
                 <condition id="2" name="Key is down" sid="860243434277162" type="Keyboard">
                     <param id="0" name="Key">65</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="829820678100834" type="System">
+                    <param id="0" name="Variable">dashing</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="844435461306826" type="Player">
@@ -53,6 +60,11 @@
             <conditions>
                 <condition id="2" name="Key is down" sid="803682513408894" type="Keyboard">
                     <param id="0" name="Key">68</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="272473497565919" type="System">
+                    <param id="0" name="Variable">dashing</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
