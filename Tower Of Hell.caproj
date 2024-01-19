@@ -11,11 +11,14 @@
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -100,16 +103,246 @@
         <object-type name="Text" sid="799095808877994">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TiledBackground3" sid="373360625687219">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Background\Pale\bg.png" />
+        </object-type>
+        <object-type name="TiledBackground" sid="667184388156383">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Background\Pale\bg.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="354543332820228">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Background\Pale\myst.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="656787834628206">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Background\Pale\rock2.png" />
+        </object-type>
+        <object-type name="9patch" sid="100047877824394">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite" sid="412944312703694">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Attack" sid="717856066447420" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="369357743584671">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="171853181216958">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Car" sid="984935985317190">
+                    <behavior id="Car" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="166837636441684" speed="5">
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.5" original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\Karakter contoh\PSD\Run01.png">
+                        <collision-poly>
+                            <point x="0.180233" y="0.135417" />
+                            <point x="0.488372" y="0" />
+                            <point x="0.883721" y="0.0694444" />
+                            <point x="0.906977" y="0.5" />
+                            <point x="0.72093" y="0.833333" />
+                            <point x="0.430233" y="0.989583" />
+                            <point x="0.238372" y="0.774306" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="179858251088009" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.506667" original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\Karakter contoh\PSD\A1.png">
+                        <collision-poly>
+                            <point x="0.269841" y="0.226667" />
+                            <point x="0.492063" y="0.0133333" />
+                            <point x="0.873016" y="0.106667" />
+                            <point x="0.825397" y="0.853333" />
+                            <point x="0.492063" y="1" />
+                            <point x="0.428571" y="0.64" />
+                            <point x="0.285714" y="0.493333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\Karakter contoh\PSD\A2.png">
+                        <collision-poly>
+                            <point x="0.230769" y="0.162162" />
+                            <point x="0.5" y="0.0135135" />
+                            <point x="0.884615" y="0.0810811" />
+                            <point x="0.865385" y="0.905405" />
+                            <point x="0.5" y="0.959459" />
+                            <point x="0.384615" y="0.72973" />
+                            <point x="0.384615" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\Karakter contoh\PSD\A3.png">
+                        <collision-poly>
+                            <point x="0.113924" y="0.125" />
+                            <point x="0.493671" y="0.0833333" />
+                            <point x="0.43038" y="0.625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.860759" y="0.847222" />
+                            <point x="0.493671" y="0.847222" />
+                            <point x="0.177215" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.5" original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\Karakter contoh\PSD\A4.png">
+                        <collision-poly>
+                            <point x="0.138462" y="0.125" />
+                            <point x="0.492308" y="0.0138889" />
+                            <point x="0.6" y="0.361111" />
+                            <point x="0.6" y="0.5" />
+                            <point x="0.969231" y="0.972222" />
+                            <point x="0.492308" y="1" />
+                            <point x="0.215385" y="0.805556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="9patch2" sid="613387652081137">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="725009386239854">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile1.png" />
+        </object-type>
+        <object-type name="9patch3" sid="363725845779557">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="404783876835946">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png" />
+        </object-type>
+        <object-type name="CollisionLv" sid="948139895364069">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="960847525954632">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="602933176330699" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="9patch4" sid="340482520239517">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="706132984963496">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png" />
+        </object-type>
+        <object-type name="9patch5" sid="732335634513553">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="121261413192330">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png" />
+        </object-type>
+        <object-type name="9patch6" sid="458132778610656">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="845622390823536">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png" />
+        </object-type>
+        <object-type name="9patch7" sid="940478383147022">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="271173133175555">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png" />
+        </object-type>
+        <object-type name="9patch8" sid="970235707303847">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="928228243858196">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png" />
+        </object-type>
+        <object-type name="9patch9" sid="164091406791303">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="443008984062808">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png" />
+        </object-type>
+        <object-type name="9patch10" sid="672823455905702">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="499717219151808">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png" />
+        </object-type>
+        <object-type name="9patch11" sid="769857947591128">
+            <plugin id="NinePatch" />
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile4.png" />
+        </object-type>
+        <object-type name="9patch12" sid="908170521640325">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="150172704832745">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile4.png" />
+        </object-type>
+        <object-type name="Mouse" sid="456219977562787">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="9patch13" sid="822896369898894">
+            <plugin id="NinePatch" />
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\craftpix-net-362692-free-green-zone-tileset-pixel-art\2 Background\Day\1.png" />
+        </object-type>
+        <object-type name="Lift" sid="603800079616893">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="336990684149940">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="676181083030432">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Semester 3\Game Development\Tower of Hell\Tower-of-Hell\Asset Environment\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>GameplayLv02.xml</layout>
+        <layout>GameplayLv03.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>GameplayLv02.xml</event-sheet>
+        <event-sheet>GameplayLv03.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
+        <global-instance type="Mouse" uid="88" />
     </global-instances>
     <sounds-folder />
     <music-folder />

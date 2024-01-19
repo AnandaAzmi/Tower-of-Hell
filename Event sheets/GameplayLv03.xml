@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameplayLv03</name>
+    <events>
+        <event-block sid="224427819688546">
+            <conditions>
+                <condition id="2" name="Key is down" sid="814033569462763" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="775279800252895" type="Sprite">
+                    <param id="0" name="Angle">0</param>
+                    <param id="1" name="Distance">8</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="396277804684113" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="391607746969682">
+            <conditions>
+                <condition id="2" name="Key is down" sid="876139864970905" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="866207556458607" type="Sprite">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">8</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="194561091068105" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="968828601797624">
+            <conditions>
+                <condition id="2" name="Key is down" sid="923755792064987" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="119485813751563" type="Sprite">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="433620177895431">
+            <conditions>
+                <condition id="0" name="On click" sid="931780008194622" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="473181850224144" type="Sprite">
+                    <param id="0" name="Instance variable">Attack</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="886155300883418">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="725027452382812" type="Sprite">
+                    <param id="0" name="Instance variable">Attack</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="437466749599843" type="Sprite">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="734459533234177">
+            <conditions>
+                <condition id="4" name="On finished" sid="516950367319781" type="Sprite">
+                    <param id="0" name="Animation">&quot;Attack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="305172650853792" type="Sprite">
+                    <param id="0" name="Instance variable">Attack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
